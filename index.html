@@ -3,120 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Muhammad Hilmi Thabibi - Staf IT</title>
+    <title>Muhammad Hilmi Thabibi | Developer & UI/UX</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <style>
+        /* Mengganti font menjadi Montserrat yang lebih modern */
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             @apply bg-gray-50 text-gray-800;
         }
         .section-title {
-            @apply text-2xl font-semibold text-blue-600 mb-6 pb-2 border-b-2 border-blue-200;
+            @apply text-3xl font-extrabold text-indigo-600 mb-8 pb-3 border-b-4 border-indigo-200 inline-block;
         }
         .container {
             @apply mx-auto px-4;
         }
+        
+        /* CSS untuk Efek Parallax */
+        .parallax-header {
+            background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Gambar latar belakang kode */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 60vh; /* Ketinggian header */
+            @apply relative overflow-hidden;
+        }
+        .header-overlay {
+            @apply absolute inset-0 bg-black opacity-70; /* Overlay gelap */
+        }
     </style>
 </head>
 <body>
-    <header class="bg-gradient-to-r from-blue-700 to-blue-500 text-white py-12 shadow-lg">
-        <div class="container max-w-4xl flex flex-col md:flex-row items-center md:items-start gap-8">
-            <img src="https://i.ibb.co/3sX801j/Muhammad-Hilmi-Thabibi-Foto.jpg" alt="Foto Profil Muhammad Hilmi Thabibi" class="w-40 h-40 rounded-full border-4 border-white shadow-lg mx-auto md:mx-0">
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl font-bold mb-2">Muhammad Hilmi Thabibi</h1>
-                <h2 class="text-xl font-light opacity-90 mb-4 tracking-wide">Staf Information Technology</h2>
-                <p class="text-lg italic opacity-80 max-w-prose">Fresh graduate Sistem Informasi dengan minat dalam UI/UX Design, pengembangan web, dan basis data.</p>
-            </div>
+    
+    <header class="parallax-header flex items-center justify-center">
+        <div class="header-overlay"></div>
+        <div class="container max-w-5xl z-10 text-white text-center">
+            <img src="https://i.ibb.co/3sX801j/Muhammad-Hilmi-Thabibi-Foto.jpg" alt="Foto Profil Muhammad Hilmi Thabibi" 
+                 class="w-40 h-40 rounded-full border-4 border-indigo-400 shadow-xl mx-auto mb-6 object-cover transform transition duration-500 hover:scale-105">
+            <h1 class="text-5xl font-extrabold mb-2 tracking-tight">Muhammad Hilmi Thabibi</h1>
+            <h2 class="text-2xl font-light opacity-90 mb-4 tracking-widest">DIGITAL SYSTEM DEVELOPER | UI/UX ENTHUSIAST</h2>
+            <p class="text-xl italic max-w-3xl mx-auto">"Siap berinovasi dalam pengembangan sistem IT perusahaan dengan passion di dunia web dan desain."</p>
         </div>
-    </div>
     </header>
 
-    <main class="container max-w-4xl py-10">
-        <section id="kontak" class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h3 class="section-title">Kontak</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-lg">
-                <p><i class="fas fa-phone mr-3 text-blue-500"></i> <span class="text-gray-700">0821-4065-4551</span></p>
-                <p><i class="fas fa-envelope mr-3 text-blue-500"></i> <span class="text-gray-700">muhammadhilmithabibi@gmail.com</span></p>
-                <p><i class="fas fa-map-marker-alt mr-3 text-blue-500"></i> <span class="text-gray-700">DS. SENDANGREJO KEC. NGIMBANG KAB. LAMONGAN</span></p>
-                <p><i class="fab fa-linkedin mr-3 text-blue-500"></i> <a href="https://www.linkedin.com/in/muhammad-hilmi-thabibi-0647161b9" target="_blank" class="text-blue-600 hover:underline">LinkedIn Profil</a></p>
-            </div>
-        </section>
+    <main class="container max-w-5xl py-12">
 
-        <section id="profesional" class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h3 class="section-title">Ringkasan Profesional</h3>
-            <p class="text-lg leading-relaxed text-gray-700">Fresh graduate Sistem Informasi dengan minat dalam UI/UX Design, pengembangan web, dan basis data. Berpengalaman dalam proyek akademik dan magang, siap berkontribusi dalam pengembangan sistem IT perusahaan.</p>
-        </section>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-12">
+            
+            <section id="ringkasan" class="lg:col-span-1 bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-500 h-fit">
+                <h3 class="text-2xl font-bold text-indigo-600 mb-5 border-b pb-2">Kontak & Keahlian</h3>
+                
+                <div class="space-y-4 mb-8 text-gray-700">
+                    <p><i class="fas fa-phone mr-3 text-indigo-500"></i> <span class="font-medium">0821-4065-4551</span></p>
+                    <p><i class="fas fa-envelope mr-3 text-indigo-500"></i> <span class="font-medium">muhammadhilmithabibi@gmail.com</span></p>
+                    <p><i class="fab fa-linkedin mr-3 text-indigo-500"></i> <a href="https://www.linkedin.com/in/muhammad-hilmi-thabibi-0647161b9" target="_blank" class="text-indigo-600 hover:text-indigo-800 transition duration-300">Profil LinkedIn</a></p>
+                    <p><i class="fas fa-map-marker-alt mr-3 text-indigo-500"></i> Lamongan, Jawa Timur</p>
+                </div>
 
-        <section id="pengalaman" class="bg-white p-8 rounded-lg shadow-md mb-8">
+                <h4 class="text-xl font-bold text-indigo-600 mb-3">Bidang Minat</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-3 py-1 rounded-full">UI/UX Design</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-3 py-1 rounded-full">Web Dev</span>
+                    <span class="bg-indigo-100 text-indigo-800 text-sm font-semibold px-3 py-1 rounded-full">Basis Data</span>
+                </div>
+            </section>
+            
+            <section id="profesional" class="lg:col-span-2 bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="section-title">Ringkasan Profesional</h3>
+                <p class="text-lg leading-relaxed text-gray-700">Fresh graduate Sistem Informasi dengan minat yang kuat dalam **UI/UX Design**, **pengembangan web**, dan **basis data**. Berpengalaman aktif dalam proyek akademik besar (E-Commerce Skripsi) dan magang di instansi pemerintah dan sekolah. Siap berkontribusi dan berinovasi dalam pengembangan sistem teknologi informasi perusahaan dengan hasil yang teruji dan berorientasi pengguna.</p>
+            </section>
+
+        </div>
+        
+        <section id="pengalaman" class="bg-white p-8 rounded-xl shadow-lg mb-12">
             <h3 class="section-title">Pengalaman Kerja</h3>
-            <div class="space-y-6">
-                <div class="border-l-4 border-blue-400 pl-4">
-                    <h4 class="text-xl font-semibold text-gray-800">Magang – Dinas Pariwisata dan Kebudayaan Kabupaten Lamongan</h4>
-                    <p class="text-gray-600 italic mb-2">Jan 2024 – Feb 2025</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Mengelola dan melakukan pemeliharaan website resmi Lamongan Tourism.</li>
-                        <li>Berperan sebagai admin media sosial, mengatur konten, memantau interaksi, serta mendukung strategi publikasi digital instansi.</li>
-                        <li>Mendukung tim dalam kegiatan pencatatan data pariwisata untuk kebutuhan promosi dan laporan internal.</li>
-                    </ul>
+            <div class="space-y-8">
+                <div class="flex items-start border-l-4 border-pink-500 pl-6">
+                    <i class="fas fa-briefcase text-3xl text-pink-500 mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Magang – Dinas Pariwisata dan Kebudayaan Kabupaten Lamongan</h4>
+                        <p class="text-pink-600 italic mb-3 font-semibold">Jan 2024 – Feb 2025</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                            <li>Mengelola dan memelihara website resmi Lamongan Tourism, memastikan informasi wisata selalu mutakhir dan akurat.</li>
+                            <li>Mengatur konten media sosial dan mendukung strategi publikasi digital instansi.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="border-l-4 border-blue-400 pl-4">
-                    <h4 class="text-xl font-semibold text-gray-800">Magang – VITA School</h4>
-                    <p class="text-gray-600 italic mb-2">Apr 2023 – Jul 2023</p>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>Berkontribusi dalam pengembangan frontend aplikasi MyVita menggunakan Framework7 berbasis JavaScript.</li>
-                        <li>Mendesain antarmuka pengguna (UI/UX) yang responsif dan ramah pengguna untuk mendukung kebutuhan e-learning.</li>
-                        <li>Melakukan integrasi sederhana antara antarmuka dan sistem backend agar aplikasi dapat berjalan optimal.</li>
-                    </ul>
+                <div class="flex items-start border-l-4 border-pink-500 pl-6">
+                    <i class="fas fa-laptop-code text-3xl text-pink-500 mr-4 mt-1"></i>
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900">Magang – VITA School</h4>
+                        <p class="text-pink-600 italic mb-3 font-semibold">Apr 2023 – Jul 2023</p>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                            <li>Pengembangan frontend aplikasi MyVita menggunakan Framework7 (JavaScript).</li>
+                            <li>Mendesain antarmuka pengguna (UI/UX) yang responsif untuk e-learning.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="proyek" class="bg-white p-8 rounded-lg shadow-md mb-8">
+        <section id="proyek" class="bg-white p-8 rounded-xl shadow-lg mb-12">
             <h3 class="section-title">Pengalaman Proyek</h3>
-            <div class="border-l-4 border-blue-400 pl-4">
-                <h4 class="text-xl font-semibold text-gray-800">Proyek Akademik – E-Commerce BBHealthy (Skripsi)</h4>
-                <p class="text-gray-600 italic mb-2">2025</p>
-                <ul class="list-disc list-inside text-gray-700 space-y-1">
-                    <li>Merancang dan membangun sistem E-Commerce BBHealthy untuk CV Herbal Sejahtera Asia.</li>
-                    <li>Sistem dikembangkan dengan metode Rapid Application Development (RAD) untuk mempercepat proses pengembangan melalui iterasi dan umpan balik cepat.</li>
-                    <li>Website dikembangkan menggunakan Node.js untuk frontend dan Laravel untuk backend.</li>
-                    <li>Fitur utama mencakup manajemen produk, transaksi online, serta integrasi dengan layanan ekspedisi.</li>
-                    <li>Hasil pengujian menunjukkan tingkat kepuasan pengguna sebesar 84,6% (kategori “Sangat Setuju”) melalui User Acceptance Testing (UAT).</li>
+            <div class="border-l-4 border-teal-500 pl-6 space-y-2">
+                <h4 class="text-xl font-bold text-gray-900">E-Commerce BBHealthy (Skripsi)</h4>
+                <p class="text-teal-600 italic font-semibold">2025 | Node.js (Frontend) & Laravel (Backend)</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+                    <li>Merancang dan membangun sistem E-Commerce BBHealthy dengan metode **Rapid Application Development (RAD)**.</li>
+                    <li>Menggunakan **Node.js** dan **Laravel** untuk menghasilkan aplikasi yang terstruktur.</li>
+                    <li>Fitur lengkap: manajemen produk, transaksi online, integrasi ekspedisi.</li>
+                    <li>Hasil UAT: Tingkat kepuasan pengguna **84,6%** (kategori “Sangat Setuju”).</li>
                 </ul>
             </div>
         </section>
 
-        <section id="pendidikan" class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h3 class="section-title">Riwayat Akademik</h3>
-            <div class="space-y-6">
-                <div class="border-l-4 border-blue-400 pl-4">
-                    <h4 class="text-xl font-semibold text-gray-800">Universitas Pembangunan Nasional Veteran Jawa Timur</h4>
-                    <p class="text-gray-600 italic mb-2">2020–2025 | Sarjana Sistem Informasi</p>
-                    <p class="text-gray-700">IPK: 3,67. Aktif dalam organisasi kampus (UKM Penalaran Kreativitas) dan terlibat dalam berbagai proyek pengembangan aplikasi.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            
+            <section id="pendidikan" class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="section-title">Riwayat Akademik</h3>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-yellow-500 pl-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Sarjana Sistem Informasi</h4>
+                        <p class="text-yellow-600 italic mb-1">Universitas Pembangunan Nasional Veteran Jawa Timur</p>
+                        <p class="text-gray-600 text-sm">2020–2025 | IPK: 3,67. Aktif UKM Penalaran Kreativitas.</p>
+                    </div>
+                    <div class="border-l-4 border-yellow-500 pl-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Jurusan IPA</h4>
+                        <p class="text-yellow-600 italic mb-1">SMA Darul Ulum 1 BPPT Jombang</p>
+                        <p class="text-gray-600 text-sm">2017–2020 | Aktif organisasi siswa KIR.</p>
+                    </div>
                 </div>
-                <div class="border-l-4 border-blue-400 pl-4">
-                    <h4 class="text-xl font-semibold text-gray-800">SMA Darul Ulum 1 BPPT Jombang</h4>
-                    <p class="text-gray-600 italic mb-2">2017–2020 | Jurusan IPA</p>
-                    <p class="text-gray-700">Aktif dalam kegiatan sekolah dan organisasi siswa KIR.</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="sertifikasi" class="bg-white p-8 rounded-lg shadow-md mb-8">
-            <h3 class="section-title">Penghargaan dan Sertifikasi</h3>
-            <div class="space-y-3 text-gray-700 text-lg">
-                <p><i class="fas fa-award mr-3 text-yellow-500"></i> Sertifikat Junior Web Programming (BNSP) | 2023</p>
-                <p><i class="fas fa-award mr-3 text-yellow-500"></i> Sertifikat Bootcamp Front-End Developer (Maxy Academy) | 2023</p>
-                <p><i class="fas fa-award mr-3 text-yellow-500"></i> Sertifikat Office Basic (BNSP) | 2022</p>
-                <p><i class="fas fa-language mr-3 text-blue-500"></i> Sertifikat English Proficiency Test (EPT) (Skor TOEFL 477) | 2023</p>
-            </div>
-        </section>
+            <section id="sertifikasi" class="bg-white p-8 rounded-xl shadow-lg">
+                <h3 class="section-title">Sertifikasi</h3>
+                <div class="space-y-4 text-gray-700">
+                    <p class="flex items-center"><i class="fas fa-check-circle mr-3 text-green-500"></i> **Junior Web Programming** (BNSP) | 2023</p>
+                    <p class="flex items-center"><i class="fas fa-check-circle mr-3 text-green-500"></i> **Bootcamp Front-End Developer** (Maxy Academy) | 2023</p>
+                    <p class="flex items-center"><i class="fas fa-check-circle mr-3 text-green-500"></i> **Office Basic** (BNSP) | 2022</p>
+                    <p class="flex items-center"><i class="fas fa-language mr-3 text-blue-500"></i> **English Proficiency Test** (EPT) | Skor TOEFL 477</p>
+                </div>
+            </section>
+        </div>
+        
     </main>
 
-    <footer class="bg-gray-800 text-white py-6 text-center shadow-inner">
-        <p>&copy; 2025 Muhammad Hilmi Thabibi. Dibuat dengan cinta dan kode.</p>
+    <footer class="bg-gray-900 text-white py-6 text-center shadow-inner">
+        <p class="text-sm opacity-80">&copy; 2025 Muhammad Hilmi Thabibi. Portofolio dibuat menggunakan Tailwind CSS.</p>
     </footer>
 
     <script src="script.js"></script>
